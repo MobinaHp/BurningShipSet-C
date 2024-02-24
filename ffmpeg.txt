@@ -1,0 +1,2 @@
+ffmpeg  -r 10 -i %05d.bmp -c:v libx264 -vf fps=5 -pix_fmt yuv420p out3.mp4
+ffmpeg -r 10 -i %05d.bmp -i test.wav -c:v libx264 -vf fps=5 -pix_fmt yuv420p outwadio.mp4
